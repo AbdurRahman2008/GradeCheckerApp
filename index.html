@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Checker App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1> Grade Checker App</h1>
+    </div>
+
+    <div class="heading">
+        <h2 class="text"> This app will tell you your Grade according to your Percentage</h2>
+    </div>
+
+
+    <form onsubmit="gradeCheck(event)">
+
+        <div class="input">
+            <h3> Enter your Percentage (%): </h3>
+            <input style="width: 150px; height: 40px;" id="percentageInput" type="number" required step="0.01">
+        </div>
+
+        <br>
+        <br>
+
+        <div class="convert">
+            <button class="button" style="width: 210px; height: 100px;">
+                <h2>Check Grade</h2>
+            </button>
+        </div>
+
+    </form>
+
+    <h1 id="resultWindow" class="message"></h1>
+
+    <script src="./script.mjs"></script>
+
+
+
+</body>
+
+</html>
